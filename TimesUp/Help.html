@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Regles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TimesUp.css" type="text/css" media="screen" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Help.js"></script>
+  </head>
+
+  <body>
+    <div class='page' id="app">
+        Hello les regles c'est ici
+        <div class='mainWrapper'> 
+            <img src="img/help.png" alt='ico_accueil'>
+            <br>
+            coucou c'est les regles du jeu ma lucette
+        </div>
+        <div class='bottomBar'> 
+            <img src='img/main.png' alt='main' class="imgMain" v-on:click="navToMain">
+
+            <img src='img/link.png' alt="liens" class="imglink" v-on:click="navToLink">
+
+            <img src='img/help.png' alt="help" class="imghelp" v-on:click="navToHelp">
+
+    </div>
+    </div>
+ 
+  </body>
+</html>

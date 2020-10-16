@@ -1,0 +1,78 @@
+.home {
+    background-color: rgb(255, 190, 148);
+    height: 100px;
+}
+
+
+.bottomBar {
+    background-color: rgb(255, 165, 105);
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.imgBandeau{
+    width: 100%;
+}
+
+.validButton{
+    background-color: rgb(45, 212, 72);
+}
+
+.page{
+    background-color: rgb(255, 190, 148);
+    text-align: center;
+    width: 100%;
+}
+
+.mainWrapper{
+    width: 100%;
+    font-family: BrixtonMed;
+}
+
+@font-face {
+	font-family: "BrixtonMed";
+    src: url('font/Brixton-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BrixtonBold";
+    src: url('font/Brixton-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url('font/verdana.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerdanaBold";
+    src: url('font/verdanab.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerdanaIta";
+    src: url('font/verdanai.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amarillo";
+    src: url('font/Amarillo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.entete {
+    font-family: Amarillo;
+}
