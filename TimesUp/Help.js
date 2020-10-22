@@ -1,4 +1,8 @@
+
+
 window.onload = init; 
+
+ //$('body').scrollspy({ target: '#list-example', offset: 50 });
 
 function init(){
     app= new Vue({
@@ -21,3 +25,4 @@ function init(){
 }
 
 var app;    
+

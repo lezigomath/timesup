@@ -15,30 +15,23 @@
   <body>
     <div class='page' id="app">
         <div class='entete'>
-            <img src='img/bandeau.png' alt='bandeau' class='imgBandeau'>
+        <img src='img/bandeau.png' alt='bandeau' class='imgBandeau'>
+        Hello les potos
         </div>
         <div class='mainWrapper'> 
-            <img src="img/accueil.png" alt='ico_accueil'>
-            <br>
-            <h2>
-                coopération en jeu
-            </h2>
-            <br>
-            <input type="text" placeholder ='rentrez code accès' v-model='accesCode' class='accesCode'>
-            <div>
-                <button :disabled="! accesCode" type="button" class="btn btn-success" v-on:click='ValidateCode'>Valider</button>
-            </div>
+            <img src="img/Tour3.png" alt='ico_accueil'>
+
         </div>
         <div class='bottomBar'> 
             <img src='img/main.png' alt='règle' class="imgMain" v-on:click="navToMain">
 
-            <img src='img/link.png' alt="liens" class="imgLink" v-on:click="navToLink">
+            <img src='img/link.png' alt="liens" class="imglink" v-on:click="navToLink">
 
-            <img src='img/help.png' alt="help" class="imgHelp" v-on:click="navToHelp">
+            <img src='img/help.png' alt="help" class="imghelp" v-on:click="navToHelp">
 
-        </div>
     </div>
-
+    </div>
+ 
   </body>
 
 </html>
