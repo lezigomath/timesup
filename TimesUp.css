@@ -1,0 +1,171 @@
+.home {
+    background-color: rgb(255, 190, 148);
+    height: 100px;
+}
+
+h2 {
+    color : rgb(50, 70, 151);
+}
+
+.bottomBar {
+    background-color: rgb(255, 165, 105);
+    height: 120px;
+    display: inline-block;
+    text-align: center;
+    width: 95%;
+    border-radius: 2em;
+    margin: 10px;
+}
+
+.imgBandeau{
+    width: 100%;
+}
+
+.imgHelp {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imgMain {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.imgLink {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.img {
+    margin: 10%;
+    width: fit-content;
+}
+
+.accesCode {
+    margin: 0.5%;
+    width: 35%;
+    text-align: center;
+    height: 35px;
+}
+
+.btn-success {
+    margin: 2%;
+    width: 20%;
+}
+
+.page{
+    background-color: rgb(255, 190, 148);
+    text-align: center;
+    width: 100%;
+}
+
+.mainWrapper{
+    width: 100%;
+    font-family: BrixtonMed;
+}
+
+@font-face {
+	font-family: "BrixtonMed";
+    src: url('font/Brixton-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BrixtonBold";
+    src: url('font/Brixton-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Verdana";
+    src: url('font/verdana.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerdanaBold";
+    src: url('font/verdanab.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "VerdanaIta";
+    src: url('font/verdanai.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Amarillo";
+    src: url('font/Amarillo.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titreRegles{
+    font-family: Verdana;
+    font-size: 180%;
+    color: rgb(226, 113, 33);
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+.textRegles{
+    text-align: left;
+    font-family: Verdana;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}
+
+.titreCredit{
+    font-family: Verdana;
+    font-size: 150%;
+    color: rgb(226, 113, 33);
+}
+
+.textCredit{
+    text-align: left;
+    font-family: Verdana;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contactCredit{
+    text-align: center;
+    font-family: VerdanaBold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+body {
+    position: relative;
+  }
+
+#list-example.list-group{
+    margin: 10px;
+    display: block;
+    font-family: Amarillo;
+} 
+.list-group-tour.list-group-tour-action{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.nav li{
+    float:left;
+}
+
+.scrollspy-example {
+    position: relative;
+    height: 200px;
+    margin-top: .5rem;
+    overflow: auto;
+};
+
+

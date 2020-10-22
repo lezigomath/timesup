@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>TIMESUP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TimesUp.css" type="text/css" media="screen" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="TimesUp.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class='page' id="app">
+        <div class='entete'>
+        <img src='img/bandeau.png' alt='bandeau' class='imgBandeau'>
+        Hello les potos
+        </div>
+        <div class='mainWrapper'> 
+            <img src="img/Tour2.png" alt='ico_accueil'>
+
+        </div>
+        <div class='bottomBar'> 
+            <img src='img/main.png' alt='règle' class="imgMain" v-on:click="navToMain">
+
+            <img src='img/link.png' alt="liens" class="imglink" v-on:click="navToLink">
+
+            <img src='img/help.png' alt="help" class="imghelp" v-on:click="navToHelp">
+
+    </div>
+    </div>
+ 
+  </body>
+
+</html>
