@@ -35,13 +35,10 @@ function init(){
                 else {return window.alert("code introuvable")
                 } */
             },
-            
         }
-
     });
 }
 
 var app;    
 
 window.onload = init;
-

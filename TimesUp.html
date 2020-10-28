@@ -17,24 +17,22 @@
         <div class='entete'>
             <img src='img/bandeau.png' alt='bandeau' class='imgBandeau'>
         </div>
-        <div class='mainWrapper'> 
-            <img src="img/accueil.png" alt='ico_accueil'>
+            <img src="img/accueil.png" alt='ico_accueil' class="col-12">
             <br>
-            <h2>
+            <h2 class="col-12">
                 coopération en jeu
             </h2>
             <br>
-            <input type="text" placeholder ='rentrez code accès' v-model='accesCode' class='accesCode'>
+            <input type="text" placeholder ='rentrez code accès' v-model='accesCode' class='accesCode' class="col-auto">
             <div>
-                <button :disabled="! accesCode" type="button" class="btn btn-success" v-on:click='ValidateCode'>Valider</button>
+                <button :disabled="! accesCode" type="button" class="btn btn-success" v-on:click='ValidateCode' class="col-auto">Valider</button>
             </div>
-        </div>
-        <div class='bottomBar'> 
-            <img src='img/main.png' alt='règle' class="imgMain" v-on:click="navToMain">
+        <div class='bottomBar' class="col-auto"> 
+            <img src='img/main.png' alt='règle' class="imgMain" v-on:click="navToMain" class="col-auto">
 
-            <img src='img/link.png' alt="liens" class="imgLink" v-on:click="navToLink">
+            <img src='img/link.png' alt="liens" class="imgLink" v-on:click="navToLink" class="col-auto">
 
-            <img src='img/help.png' alt="help" class="imgHelp" v-on:click="navToHelp">
+            <img src='img/help.png' alt="help" class="imgHelp" v-on:click="navToHelp" class="col-auto">
 
         </div>
     </div>

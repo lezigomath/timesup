@@ -10,30 +10,43 @@ h2 {
 .bottomBar {
     background-color: rgb(255, 165, 105);
     height: 120px;
-    display: inline-block;
+    display: flex;
     text-align: center;
     width: 95%;
     border-radius: 2em;
     margin: 10px;
+    margin-left: 2%;
+    object-fit: scale-down;
+}
+.bottomBar img {
+    max-width: 100%;
+    float: none;
+    width: 25%;
+    margin-left: 5%;
 }
 
 .imgBandeau{
-    width: 100%;
+    width: 75%;
+    padding: 5%;
 }
 
 .imgHelp {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: scale-down;
 }
 
 .imgMain {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: scale-down;
+    width: auto;
 }
 
 .imgLink {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    object-fit: scale-down;
 }
 
 .img {
@@ -46,6 +59,7 @@ h2 {
     width: 35%;
     text-align: center;
     height: 35px;
+    font-size: 80%;
 }
 
 .btn-success {
@@ -124,8 +138,10 @@ h2 {
 
 .titreCredit{
     font-family: Verdana;
-    font-size: 150%;
+    font-size: 180%;
     color: rgb(226, 113, 33);
+    margin: 10px;
+    margin-bottom: 20px;
 }
 
 .textCredit{
@@ -145,7 +161,13 @@ h2 {
 
 body {
     position: relative;
+    min-height: 100%;
   }
+
+  html, 
+body {
+    height: 100%;
+}
 
 #list-example.list-group{
     margin: 10px;
@@ -153,8 +175,8 @@ body {
     font-family: Amarillo;
 } 
 .list-group-tour.list-group-tour-action{
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
@@ -164,7 +186,7 @@ body {
 
 .scrollspy-example {
     position: relative;
-    height: 200px;
+    height: 250px;
     margin-top: .5rem;
     overflow: auto;
 };
