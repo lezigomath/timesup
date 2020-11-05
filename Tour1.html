@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>TIMESUP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
   <link rel="stylesheet" href="TimesUp.css" type="text/css" media="screen" />
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
@@ -13,7 +15,9 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://unpkg.com/realm-web@0.8.0/dist/bundle.iife.js"></script>
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" integrity="sha512-whyb3qZrPEJNH+Z7P4YpD27cQ4C44kFZxqrmlNVxNB13HZlB0qJ0Xv1LKshWjGjZGtPAf+W/J+aEck5FmCf/kw==" crossorigin="anonymous" />
+    
+  </head>
 
 <body>
   <div class='page' id="app">
@@ -21,36 +25,49 @@
       <img src='img/bandeau.png' alt='bandeau' class='imgBandeau' class="col-auto">
     </div>
     <div class='mainWrapper' class="row">
-      <img src="img/Tour1.png" alt='ico_accueil' class="imgTour1" class="col-sm-auto">      
-
-
-    <div class="pomodoroTimer" class="col-4-auto" class="row">
+      <div class="row">
+      <img src="img/Tour1.png" alt='ico_accueil' class="imgTour1" class="col">
+      <div class="currentTour" class="col">
+        Tour 1
+      </div>
+      </div>
+    <div class="pomodoroTimer">
       <div class="timer-display">
-        <button id="step-down" class="stepper animated" OnClick="decrementTimer()">
+        <button id="step-down" class="stepperMoins animated" OnClick="decrementTimer()">
           <i class="fa fa-2x fa-minus-circle"></i>
+        </button>
+        <button id="step-up" class="stepperPlus animated" type="button" OnClick="incrementTimer()">
+          <i class="fa fa-2x fa-plus-circle"></i>
         </button>
         <div id="timer" class="timer-control" OnClick="startTimer()">
           <span id="minutes">1</span>
           <span class="seperator">:</span>
           <span id="seconds">30</span>
         </div>
-        <button id="step-up" class="stepper animated" type="button" OnClick="incrementTimer()">
-          <i class="fa fa-2x fa-plus-circle"></i>
-        </button>
+
       </div>
       <div id="interface" class="animated">
         <button class="resetButton" type="button" OnClick="resetTimer()" class="col-4">reset</button>
+      
+        <button class="stopButton" type="button" Onclick="stopTurn()">Stop Tour</button>
       </div>
     </div>
 
     <div v-if ="currentCardIsLoaded" class="gameDiv">
-      {{currentCard.word}}
+      <div class="currentWord">
+        {{currentCard.word}}
+      </div>
+
+      <span class="nbWordsLeft">
+        {{currentCards.length}}
+      </span>
+
 
       <button id="WordFound" type="button" v-on:click="foundCard()">OK</button>
 
       <button id="WordPass" type="button" v-on:click='nextCard()'>NEXT</button>
-    </div>
 
+    </div>
   </div>
 
     <div class='bottomBar'>
@@ -64,5 +81,4 @@
   </div>
 
 </body>
-
 </html>

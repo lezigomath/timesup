@@ -14,7 +14,6 @@ const appConfig = {
             return cards;
         }
         finally{
-
         }
     }
 
@@ -50,9 +49,8 @@ function init (){
                     this.currentCard = takenElements[0];
                 }
                 else {
-                    alert("vous avez trouvé " + this.getFoundCards().length + "cartes.");
+                    alert("Bravo, vous avez trouvé " + this.getFoundCards().length + " sur 53 cartes.");
                 }
-
             },
 
             foundCard: function (){
