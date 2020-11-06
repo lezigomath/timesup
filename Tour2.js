@@ -21,7 +21,6 @@ function init (){
     app= new Vue ({
         el: '#app',
         data: {
-            accessCode :'',
             cards1 :[],
             cards2 :[],
             currentCards :[],
@@ -45,6 +44,9 @@ function init (){
             navToTour2: function(){
                 window.location ='./Tour2.html'
             }, 
+            navToTour3: function(){
+                window.location ='./Tour3.html'
+            },
             
             getRandomCardFromCurrentCards: function (){
                 if (this.currentCards.length > 0){
@@ -75,18 +77,9 @@ function init (){
         },
 
         async created (){
-            var searchCode= new URLSearchParams(window.location.search)
-            this.accessCode = searchCode.get('code')
             let cards = await initCards();
             this.cards1 = cards.filter(card => card.game == 1);
             this.cards2 = cards.filter(card => card.game == 2);
-            if (this.accessCode == "game1"){
-                this.currentCards = this.cards1;
-            }
-            else if (this.accessCode == "game2"){
-                this.currentCards = this.cards2;
-            }
-            else alert("code error");
             this.getRandomCardFromCurrentCards();
             this.currentCardIsLoaded = true;
         },

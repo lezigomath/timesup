@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>TIMESUP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <link rel="stylesheet" href="TimesUp.css" type="text/css" media="screen" />
@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <script src="https://unpkg.com/realm-web@0.8.0/dist/bundle.iife.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.css" integrity="sha512-whyb3qZrPEJNH+Z7P4YpD27cQ4C44kFZxqrmlNVxNB13HZlB0qJ0Xv1LKshWjGjZGtPAf+W/J+aEck5FmCf/kw==" crossorigin="anonymous" />
-    
+ 
   </head>
 
 <body>
@@ -40,16 +40,32 @@
           <i class="fa fa-2x fa-plus-circle"></i>
         </button>
         <div id="timer" class="timer-control" OnClick="startTimer()">
-          <span id="minutes">1</span>
+          <span id="minutes">2</span>
           <span class="seperator">:</span>
-          <span id="seconds">30</span>
+          <span id="seconds">00</span>
         </div>
 
       </div>
       <div id="interface" class="animated">
         <button class="resetButton" type="button" OnClick="resetTimer()" class="col-4">reset</button>
       
-        <button class="stopButton" type="button" Onclick="stopTurn()">Stop Tour</button>
+        <button class="stopButton" type="button" Onclick="stopTurn()" a href="#" data-toggle="modal" data-target="#smallModal">Stop Tour</button>
+ 
+        <!--la modale-->
+        <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h3>Bravo, vous avez trouvé {{getFoundCards().length}} sur 53 cartes. Voulez vous passer au tour suivant ?</h3>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-lg btn-danger" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-lg btn-success" v-on:click="navToTour2">Tour suivant</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -61,7 +77,6 @@
       <span class="nbWordsLeft">
         {{currentCards.length}}
       </span>
-
 
       <button id="WordFound" type="button" v-on:click="foundCard()">OK</button>
 
@@ -80,5 +95,8 @@
     </div>
   </div>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
