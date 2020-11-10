@@ -41,13 +41,7 @@ function init (){
             navtoTour1: function (){
                 window.location ='./Tour1.html'
             },
-            navToTour2: function(){
-                window.location ='./Tour2.html'
-            }, 
-            navToTour3: function(){
-                window.location ='./Tour3.html'
-            },
-            
+
             getRandomCardFromCurrentCards: function (){
                 if (this.currentCards.length > 0){
                     var randomIdx = Math.trunc(Math.random()*100 % this.currentCards.length );

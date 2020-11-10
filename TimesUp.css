@@ -18,7 +18,12 @@ h2 {
     margin-left: 2%;
     object-fit: scale-down;
     margin-top: 30px;
+    border: 2px solid #777 !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 5px;
 }
+
 .bottomBar img {
     max-width: 100%;
     float: none;
@@ -44,7 +49,7 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
     object-fit: scale-down;
-    width: auto;
+    width: 80%;
 }
 
 .imgLink {
@@ -58,9 +63,24 @@ h2 {
     width: fit-content;
 }
 
-/*.imgTour1{
-    height: 150px;
-}*/
+.imgTour1{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 10%;
+}
+.imgTour2{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 10%;
+}
+.imgTour3{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 10%;
+}
 
 .accesCode {
     margin: 0.5%;
@@ -70,16 +90,18 @@ h2 {
     font-size: 80%;
 }
 
-.btn-success {
+.btn.btn-success {
     margin: 2%;
-    width: 20%;
-    border-radius: 0% !important;
+    width: auto;
+    border-radius: 15% !important;
+    border: 2px solid #444 !important;
 }
 
 .page{
     background-color: rgb(255, 190, 148);
     text-align: center;
     width: 100%;
+    min-height: 100vh;
 }
 
 .mainWrapper{
@@ -88,9 +110,11 @@ h2 {
 }
 
 .currentTour{
+    position: relative;
+    left: 10%;
     font-family: Amarillo;
-    margin-top: 37%;
-    margin-left: 5%;
+    margin-top: 20px;
+    margin-left: 10%;
     font-size: 1.5em;
     color: rgb(50, 70, 151);
     text-align: center;
@@ -297,7 +321,7 @@ body {
         }
 
     .currentWord{
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     #WordPass{
@@ -322,5 +346,20 @@ body {
         border: 1px solid #444;
         padding: 1%;
         padding-left: 5px;
+        position: relative;
+        top: -50px;
+        right: -5px;
+        float: right;
     }
 
+    .btn.btn-lg.btn-danger{
+        border-radius: 15% !important;
+        border: 2px solid #444;
+        width: auto;
+    }
+
+    .btn.btn-lg.btn-success{
+        border-radius: 15% !important;
+        border: 2px solid #444;
+        width: auto;
+    }
