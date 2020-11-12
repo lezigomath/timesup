@@ -21,17 +21,15 @@
 
 <body>
   <div class='page' id="app">
-    <div class='entete'>
-      <img src='img/bandeau.png' alt='bandeau' class='imgBandeau' class="col-auto">
-    </div>
-    <div class='mainWrapper' class="row">
+    
+    <div class="mainWrapper">
       <div class="row">
-      <img src="img/Tour1.png" alt='ico_accueil' class="imgTour1" class="col">
-      <div class="currentTour" class="col">
+      <img src="img/Tour1.png" alt='ico_accueil' class="imgTour1 col-6">
+      <div class="currentTour col-6">
         Tour 1
       </div>
       </div>
-    <div class="pomodoroTimer">
+    <div class="pomodoroTimer col-9">
       <div class="timer-display">
         <button id="step-down" class="stepperMoins animated" OnClick="decrementTimer()">
           <i class="fa fa-2x fa-minus-circle"></i>
@@ -47,7 +45,7 @@
 
       </div>
       <div id="interface" class="animated">
-        <button class="resetButton" type="button" OnClick="resetTimer()" class="col-4">reset</button>
+        <button class="resetButton" type="button" OnClick="resetTimer()" >reset</button>
       
         <button class="stopButton" type="button" Onclick="stopTurn()" a href="#" data-toggle="modal" data-target="#smallModal">Stop Tour</button>
  
@@ -78,7 +76,7 @@
         {{currentCards.length}}
       </span>
 
-      <button id="WordFound" type="button" v-on:click="foundCard()">OK</button>
+      <button id="WordFound" type="button" v-on:click="foundCard()" v-on:click="addSessionStorage()">OK</button>
 
       <button id="WordPass" type="button" v-on:click='nextCard()'>NEXT</button>
 

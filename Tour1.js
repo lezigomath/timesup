@@ -45,7 +45,7 @@ function init (){
             navToTour2: function(){
                 window.location ='./Tour2.html'
             }, 
-            
+
             getRandomCardFromCurrentCards: function (){
                 if (this.currentCards.length > 0){
                     var randomIdx = Math.trunc(Math.random()*100 % this.currentCards.length );
@@ -71,6 +71,15 @@ function init (){
             getFoundCards: function(){
                let FoundCards = this.playedCards.filter(card => card.found);
                return FoundCards;
+            },
+            addSessionStorage: function(){
+                let cardObj = JSON.stringify(this.FoundCards);
+                if(typeof(Storage) !== "undefined") {
+                    sessionStorage.setItem("cards",cardObj)
+                }
+                else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                }
             }
         },
 
