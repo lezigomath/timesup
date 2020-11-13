@@ -79,6 +79,10 @@ h2 {
     margin-top: 10%;
 }
 
+.imgTimer{
+    width: inherit;
+}
+
 .accesCode {
     margin: 0.5%;
     width: 40%;
@@ -225,7 +229,7 @@ body {
 }
 
 .pomodoroTimer {
-    background: #e9eea3;
+    background: rgb(255, 190, 148);
     border: 3px solid #777;
     border-radius: 12px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -239,6 +243,7 @@ body {
     font-size: 2em;
     width: 100%;
     transition: all 0.25s ease-in;
+    right: -5% !important;
   }
 
   .timer-control:hover {
@@ -353,6 +358,8 @@ body {
         top: -50px;
         right: -5px;
         float: right;
+        width: 32px;
+        height: 32px;
     }
 
     .btn.btn-lg.btn-danger{
@@ -398,4 +405,7 @@ body {
     .wordDesc{
         display: none;
         background-color: ivory;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        border-radius: 1.5em;
     }

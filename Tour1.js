@@ -68,10 +68,12 @@ function init (){
                 this.playedCards.push(this.currentCard);
                 this.getRandomCardFromCurrentCards();
             },
+
             getFoundCards: function(){
                let FoundCards = this.playedCards.filter(card => card.found);
                return FoundCards;
             },
+            
             addSessionStorage: function(){
                 let cardObj = JSON.stringify(this.FoundCards);
                 if(typeof(Storage) !== "undefined") {
