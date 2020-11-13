@@ -20,13 +20,10 @@
 
 <body>
   <div class='page' id="app">
-    <div class='entete'>
-      <img src='img/bandeau.png' alt='bandeau' class='imgBandeau' class="col-auto">
-    </div>
     <div class='mainWrapper' class="row">
       <div class="row">
-      <img src="img/Tour3.png" alt='ico_accueil' class="imgTour3" class="col">
-      <div class="currentTour" class="col">
+      <img src="img/Tour3.png" alt='ico_accueil' class="imgTour3 col-6">
+      <div class="currentTour col-6">
         Tour 3
       </div>
       </div>
@@ -67,8 +64,21 @@
 
       </div>
     </div>
+    
+    <div class="rappelRegles" id="rappelR">
+      <span>
+        C'est désormais le deuxième tour.
+        Toujours dans un temps limité nous ajoutons une consigne supplémentaire :
+        Vous ne pouvez utiliser qu'un seul mot pour décrire le mot !
+        Les autres consignes sont inchangées.
+      </span>
+    </br>
+      <button type="button" class="gameStartBtn" OnClick="startTimer();hideRappel();showGame()" >Commencer</button>
+    </div>
 
-    <div v-if ="currentCardIsLoaded" class="gameDiv">
+
+    <!--game div, active apres onclick:showgame()-->
+    <div v-if ="currentCardIsLoaded" class="gameDiv" id="gameD">
       <div class="currentWord">
         {{currentCard.word}}
       </div>

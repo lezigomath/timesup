@@ -178,3 +178,24 @@ function runTimer() {
 function stopTurn(){
     resetTimer();
 }
+
+function hideRappel(){
+  var x = document.getElementById("rappelR");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showGame() {
+  document.getElementById('gameD').style.display='block';;
+}
+
+
+function showDetail(){
+  if(document.getElementById('wordDetail').style.display === "none"){
+    document.getElementById('wordDetail').style.display = "block";}
+    else {
+      document.getElementById('wordDetail').style.display = "none";}
+    }

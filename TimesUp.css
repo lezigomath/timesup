@@ -19,7 +19,7 @@ h2 {
     margin-top: 30px;
     border: 2px solid #777 !important;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: relative;
     bottom: 5px;
 }
 
@@ -63,20 +63,20 @@ h2 {
 }
 
 .imgTour1{
-    max-width: 250px;
-    max-height: 280px;
-    margin-top: 5%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10%;
 }
 
 .imgTour2{
-    max-width: 250px;
-    max-height: 280px;
-    margin-top: 5%;}
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10%;}
 
 .imgTour3{
-    max-width: 250px;
-    max-height: 280px;
-    margin-top: 5%;
+    max-width: 200px;
+    max-height: 200px;
+    margin-top: 10%;
 }
 
 .accesCode {
@@ -109,7 +109,7 @@ h2 {
 .currentTour{
     font-family: Amarillo;
     margin-top: 20%;
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgb(50, 70, 151);
     text-align: center;
     text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
@@ -311,6 +311,7 @@ body {
     margin: 5% auto;
     width: 85%;
     padding: 2%;
+    display: none;
         }
 
     .currentWord{
@@ -325,12 +326,20 @@ body {
         width: 42px;
         height: 42px;
         margin-top: 4%;
+        background-image: url(./img/false.png);
+        background-size: contain;
+        background-position-y: center;
     }
 
     #WordFound{
         margin-right: 15%;
         margin-left: 10%;
         font-size: 1.5em;
+        background-image: url(./img/true.png);
+        background-size: contain;
+        width: 58px;
+        height: 58px;
+        background-position-y: center;
     }
 
     .nbWordsLeft{
@@ -356,4 +365,37 @@ body {
         border-radius: 15% !important;
         border: 2px solid #444;
         width: auto;
+    }
+
+    .rappelRegles{
+        background: #e8ebc5;
+    border: 3px solid #777;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 95%;
+    margin: 2.5%;
+    }
+
+    .gameStartBtn{
+        border-radius: 15% !important;
+        border: 2px solid #444;
+        width: auto;
+        background-color: #00cc66;
+    }
+
+    .detailBtn{
+        -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: none;
+            border: none;
+            color: #444;
+            transition: all .25s ease-in;
+            position: absolute;
+            left: 15%;
+    }
+
+    .wordDesc{
+        display: none;
+        background-color: ivory;
     }
